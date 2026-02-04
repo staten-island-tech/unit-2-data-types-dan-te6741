@@ -1,14 +1,13 @@
-def input (ismember, age, isresident):
-    if (age <= 12):
-        print("Child discount")
-    if (age >= 65):
-        print("Senior discount")
-    if ismember == (True):
-        print("Membership discount")
-    if (isresident == True):
-        print("Resident discount")
+def checkMembership(ismember, age, isresident):
+    if (age <= 12 or age >= 65 or ismember == True or isresident == True):
+        print ("Discount granted!")
+    else:
+        print ("No discount for you brokie")
+    
 
-input == ismember
+
+checkMembership(False, 35, False)
+
 
 
 
