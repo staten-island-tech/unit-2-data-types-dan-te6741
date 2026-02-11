@@ -28,12 +28,33 @@
 # else:
 #     print ("Invalid Input")
 
-x=1
-num = int(input("Input number to calculate all factors of"))
-print(num)
-for i in (range(x,num)):
-    if(num%x == 0):
-        print (x)
+# x=1
+# num = int(input("Input number to calculate all factors of"))
+# print(num)
+# for i in (range(x,num)):
+#     if(num%x == 0):
+#         print (x)
     
-    x = x+1
+#     x = x+1
+
+
+gcf1 = int(input("Input first number of the number pair to find GCF"))
+gcf2 = int(input("Input second number of the number pair to find GCF"))
+
+if (gcf1 > gcf2):
+    big = gcf1
+else: big = gcf2
+
+
+
+for i in range (2,big):
+    if(gcf1%i == 0) == (gcf2%i == 0):
+        print ("GCF FOUND")
+
+
+   
+
+
+
+
 
