@@ -40,16 +40,18 @@
 
 gcf1 = int(input("Input first number of the number pair to find GCF"))
 gcf2 = int(input("Input second number of the number pair to find GCF"))
+small = 0
+if (gcf1 < gcf2):
+    small = gcf1
+else: small = gcf2
 
-if (gcf1 > gcf2):
-    big = gcf1
-else: big = gcf2
 
+greatest = 0
+for i in range (2,small + 1):
+    if(gcf1%i == 0) and (gcf2%i == 0):
+        greatest = i
 
-
-for i in range (2,big):
-    if(gcf1%i == 0) == (gcf2%i == 0):
-        print ("GCF FOUND")
+print(greatest)
 
 
    
